@@ -7,4 +7,4 @@ description = "Syntax highlighting for Age of Empires II random map scripts."
 
 [grammars.aoe2_rms]
 repository = "file:///C:/Users/Warren/Desktop/extension-testing/tree-sitter-aoe2-rms"
-rev = "df63d785e4c996b84fb3c3ba38987eb9f962d0ee"
+rev = "4c37518afb5befd63093f4e86a55aa1a76a451f5"
