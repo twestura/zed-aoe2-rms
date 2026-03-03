@@ -1,0 +1,10 @@
+id = "aoe2-rms"
+name = "Aoe2 Random Map Script"
+version = "0.0.1"
+schema_version = 1
+authors = ["T-West twestura@gmail.com"]
+description = "Syntax highlighting for Age of Empires II random map scripts."
+
+[grammars.aoe2_rms]
+repository = "file:///C:/Users/Warren/Desktop/extension-testing/tree-sitter-aoe2-rms"
+rev = "a75edc0e126d6a7b8b7f9a995d074968351fbfc7"

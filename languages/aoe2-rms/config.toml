@@ -1,0 +1,4 @@
+name = "Aoe2 RMS"
+grammar = "aoe2_rms"
+path_suffixes = ["rms"]
+line_comments = []
