@@ -2,7 +2,7 @@ id = "aoe2-rms"
 name = "Aoe2 Random Map Script"
 version = "0.0.1"
 schema_version = 1
-authors = ["T-West <twestura@gmail.com>"]
+authors = ["Travis Westura <twestura@gmail.com>"]
 description = "Syntax highlighting for Age of Empires II random map scripts."
 
 [grammars.aoe2_rms]
