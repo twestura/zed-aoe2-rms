@@ -1,5 +1,5 @@
 name = "Aoe2 RMS"
 grammar = "aoe2_rms"
 path_suffixes = ["rms"]
-line_comments = []
+block_comment = { start = "/*", prefix = "* ", end = "*/", tab_size = 1 }
 tab_size = 2

@@ -1,5 +1,8 @@
 ; Highlights for Age of Empires II random map scripts.
 
+; Comments
+(comment) @comment
+
 ; Keywords
 "#define" @keyword
 "#const" @keyword
