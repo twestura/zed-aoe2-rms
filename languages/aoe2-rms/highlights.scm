@@ -5,16 +5,19 @@
 [
   "#const"
   "#define"
-  ; "#include_drs"
-  ; "includeXS"
-  ; "if"
-  ; "elseif"
-  ; "else"
-  ; "endif"
+  "#include_drs"
+  "#includeXS"
   ; "start_random"
   ; "percent_chance"
   ; "end_random"
 ] @keyword
+
+(if_directive "if" @keyword)
+(elseif_directive "elseif" @keyword)
+(else_directive) @keyword
+(endif_directive) @keyword
+(start_random_directive) @keyword
+(end_random_directive) @keyword
 
 ; Section titles
 [
@@ -27,8 +30,9 @@
   "<OBJECTS_GENERATION>"
 ] @tag
 
-; Command names
+; rnd and Command names
 [
+  "rnd"
   "random_placement"
   "direct_placement"
   "grouped_by_team"
@@ -74,6 +78,7 @@
 
 ; Attribute names
 [
+  ; "percent_chance"
   "terrain_type"
   "land_percent"
   "number_of_tiles"
@@ -115,6 +120,7 @@
   "replace_terrain"
   "terrain_cost"
   "terrain_size"
+  "add_object"
   "number_of_objects"
   "number_of_groups"
   "group_variance"
@@ -169,17 +175,32 @@
 (create_terrain_attribute
   "base_terrain" @property)
 
+(percent_chance_directive
+  "percent_chance" @property)
+
 [
   "{"
   "}"
+  "("
+  ")"
 ] @punctuation.bracket
+
+"," @punctuation.delimiter
+
+[
+  "+"
+  "-"
+  "*"
+  "/"
+  "%"
+] @operator
 
 (identifier) @constant
 (integer) @number
 (float) @number
+(string) @string
+(filename) @string
 
 ; TODO if
 ; TODO random blocks
-; TODO rnd
-; TODO includes
 ; TODO math expressions
