@@ -1,7 +1,7 @@
 name = "Aoe2 RMS"
 grammar = "aoe2_rms"
 path_suffixes = ["rms", "rms2", "def", "inc", "bin"]
-autoclose_before = ">})"
+autoclose_before = ">})\""
 block_comment = { start = "/* ", prefix = " * ", end = " */", tab_size = 0 }
 brackets = [
     { start="(", end=")", close=true, newline=false },
